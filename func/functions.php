@@ -18,10 +18,16 @@ require('func/Cart.php');
 
 require('func/Account.php');
 
+require('func/Product.php');
+
+require('func/Manage.php');
+
 // Connect object
 $db = new Connect();
 
-
+// Product object
+$product = new Product($db);
+$productData = $product->getData();
 
 // Cart object
 $cart = new Cart($db);
@@ -29,6 +35,11 @@ $cart = new Cart($db);
 // Account object
 $acc = new Account($db);
 $accData = $acc->getData();
+
+// Manage object
+$manage = new Manage($db);
+$manageData = $manage->getData();
+$brandData = $manage->getBrands();
 
 
 

@@ -5,8 +5,8 @@ class Connect
     // Database Connection Properties
     protected $host = '127.0.0.1';
     protected $user = 'root';
-    protected $password = '';
-    protected $database = 'mobileshop';
+    protected $password = '132027';
+    protected $database = 'semijoiaprod';
 
     // connection property
     public $con = null;

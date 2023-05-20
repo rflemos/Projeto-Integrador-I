@@ -30,5 +30,17 @@ class Cart
 
         return $resultArray;
     }
+
+
+    public function getCartId($cartArray = null)
+    {
+        $cart_id = array();
+        if ($cartArray != null) {
+            foreach ($cartArray as $item) {
+                array_push($cart_id, $item['item_id']);
+            }
+            return $cart_id;
+        }
+    }
   
 }

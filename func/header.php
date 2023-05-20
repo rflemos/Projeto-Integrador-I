@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="#" href="#" type="#">
+    <link rel="icon" href="./assets/logo.jpeg" type="image/x-icon">
     <title>Só Na Joia</title>
 
     
@@ -66,7 +66,7 @@
 
         <!-- Primary Navigation -->
         <nav class="navbar navbar-expand-lg px-3 navbar-dark color-second-bg">
-            <img src="#" class="logo">
+            <img src="./assets/logo.jpeg" class="logo rounded-circle">
             <a class="navbar-brand" href="./index.php">Só Na Joia</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
