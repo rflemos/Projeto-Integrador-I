@@ -15,6 +15,10 @@ include('libs/_special-price.php');
 
 include('libs/_banner-ads.php');
 
+include('libs/_new-bijus.php');
+
+include('libs/_blogs.php');
+
 ?>
 
 

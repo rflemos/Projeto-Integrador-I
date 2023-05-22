@@ -30,7 +30,7 @@ class Account
         return $resultArray;
     }
 
-   /*
+   
     public function getAccount($id = null, $table = 'account')
     {
         if ($id != null) {
@@ -113,8 +113,11 @@ class Account
             }
             $sqlAccount = "INSERT INTO account(username, password, email) VALUES ('{$username}','{$password}','{$email}')";
             $sqlUser = "INSERT INTO user(fullname, phone, avatar, city, gender, address) VALUES ('{$fullname}','{$phone}','{$avatar}','{$city}','{$gender}','{$address}')";
-            $resultAcc = $this->db->con->query($sqlAccount);
             $resultUser = $this->db->con->query($sqlUser);
+            $last_id = mysqli_insert_id($this->db->con);
+            $sqlAccount = "INSERT INTO account(id,username, password, email) VALUES ($last_id,'{$username}','{$password}','{$email}')"; 
+
+            $resultAcc = $this->db->con->query($sqlAccount);
             if ($resultAcc && $resultUser) {
                 header('Location: ' . $_SERVER['REQUEST_URI']);
                 return true;
@@ -132,7 +135,7 @@ class Account
             }
         }
     }
-
+/*
     // delete account item using account id
     public function deleteAcc($id = null, $table = 'account')
     {

@@ -53,7 +53,7 @@ a {
 }
 
 .color-second-bg {
-    background: #151517;
+    background: #543f1f;
 }
 
 .color-yellow {
@@ -204,6 +204,7 @@ a {
 }
 
 #footer {
+    background: #543f1f;
     height: 230px;
 }
 

@@ -5,7 +5,7 @@ class Connect
     // Database Connection Properties
     protected $host = '127.0.0.1';
     protected $user = 'root';
-    protected $password = '132027';
+    protected $password = '';
     protected $database = 'semijoiaprod';
 
     // connection property

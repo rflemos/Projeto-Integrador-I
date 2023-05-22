@@ -42,5 +42,37 @@ $manageData = $manage->getData();
 $brandData = $manage->getBrands();
 
 
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['login-submit'])) {
+       
+        $acc->login($_POST['username'], $_POST['password']);
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['logout-submit'])) {
+        
+        $acc->logout();
+    }
+}
+
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['register-submit'])) {
+        
+        $acc->register(
+            $_POST['fullname'],
+            $_POST['username'],
+            $_POST['password'],
+            $_POST['phone'],
+            $_POST['avatar'],
+            $_POST['email'],
+            $_POST['city'],
+            $_POST['gender'],
+            $_POST['address']
+        );
+    }
+}
+
 
 ?>

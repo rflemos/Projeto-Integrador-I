@@ -58,8 +58,8 @@
                         echo "Login";
                     } ?>
                 </a>
-                <a href="#" class="px-3 border-start text-dark">Cadastro</a>
-                <a href="#" class="px-3 border-start text-dark">Faça Login</a>
+                <a href="./register.php" class="px-3 border-start text-dark">Cadastro</a>
+                <a href="./account.php" class="px-3 border-start text-dark">Gerenciar Contas</a>
                 <a href="#" class="px-3 border-start text-dark">Minha Conta</a>
             </div>
         </div>
@@ -84,7 +84,7 @@
                         <a class="nav-link" href="./index.php#special-price">Preço Epecial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php#new-phones">Novas Bijus</a>
+                        <a class="nav-link" href="./index.php#new-bijus">Novas Bijus</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./index.php#blogs">Blogs</a>

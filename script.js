@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 
     // new jewls owl carousel
-    $("#new-jewls .owl-carousel").owlCarousel({
+    $("#new-bijus .owl-carousel").owlCarousel({
         loop: true,
         nav: false,
         dots: true,
@@ -110,11 +110,11 @@ $(document).ready(function () {
                 </td>
                 <td>
                     <select name="brand-${$manageProductItems}">
-                        <option value="1">Samsung</option>
-                        <option value="2">Redmi</option>
-                        <option value="3">Apple</option>
-                        <option value="4">Oppo</option>
-                        <option value="5">Nokia</option>
+                        <option value="1">XYZ</option>
+                        <option value="2">ABC</option>
+                        <option value="3">DEF</option>
+                        <option value="4">GHI</option>
+                        <option value="5">JHO</option>
                     </select>
                 </td>
                 <td>
