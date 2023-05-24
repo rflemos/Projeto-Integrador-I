@@ -42,6 +42,29 @@ $manageData = $manage->getData();
 $brandData = $manage->getBrands();
 
 
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['top_sale_submit'])) {
+        // call method addToCart
+        $cart->addToCart($_POST['user_id'], $_POST['item_id']);
+    }
+}
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['special_price_submit'])) {
+        // call method addToCart
+        $cart->addToCart($_POST['user_id'], $_POST['item_id']);
+    }
+}
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['new_bijus_submit'])) {
+        // call method addToCart
+        $cart->addToCart($_POST['user_id'], $_POST['item_id']);
+    }
+}
+
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if (isset($_POST['login-submit'])) {
        
@@ -70,6 +93,106 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $_POST['city'],
             $_POST['gender'],
             $_POST['address']
+        );
+    }
+}
+
+
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['buy_product_submit'])) {
+        // call method addToCart
+        $cart->addToCart($_POST['user_id'], $_POST['item_id']);
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['delete-cart-submit'])) {
+        // call method deleteCart
+        $cart->deleteCart($_POST['item_id']);
+    }
+}
+
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['manage-update'])) {
+        if (isset($_GET['id'])) {
+            // call method updateProduct
+            $manage->updateProduct(
+                $_GET['id'],
+                $_POST['name-' . $_GET['id']],
+                $_POST['brand-' . $_GET['id']],
+                $_POST['price-' . $_GET['id']],
+                $_FILES['image-' . $_GET['id']],
+            );
+        } else {
+            echo "<script>alert('invalid id');</script>";
+        }
+    }
+}
+
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['manage-delete'])) {
+        if (isset($_GET['id'])) {
+            // call method deleteProduct
+            $manage->deleteProduct($_GET['id']);
+        } else {
+            echo "<script>alert('invalid id');</script>";
+        }
+    }
+}
+
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['manage-insert'])) {
+        // call method insertProduct
+        $manage->insertProduct(
+            $_POST['name-' . $_GET['id']],
+            $_POST['brand-' . $_GET['id']],
+            $_POST['price-' . $_GET['id']],
+            $_FILES['image-' . $_GET['id']],
+        );
+    }
+}
+
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['account-delete'])) {
+        if (isset($_GET['id'])) {
+            // call method deleteAcc
+            $acc->deleteAcc($_GET['id']);
+        } else {
+            echo "<script>alert('invalid id');</script>";
+        }
+    }
+}
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['account-update'])) {
+        if (isset($_GET['id'])) {
+            // call method updateProduct
+            $acc->updateAcc(
+                $_GET['id'],
+                $_POST['username-' . $_GET['id']],
+                $_POST['password-' . $_GET['id']],
+                $_POST['email-' . $_GET['id']],
+                $_POST['privilege-' . $_GET['id']],
+            );
+        } else {
+            echo "<script>alert('invalid id');</script>";
+        }
+    }
+}
+// request method post
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    if (isset($_POST['account-insert'])) {
+        // call method insertAcc
+        $acc->insertAcc(
+            $_POST['username-' . $_GET['id']],
+            $_POST['password-' . $_GET['id']],
+            $_POST['email-' . $_GET['id']],
+            $_POST['privilege-' . $_GET['id']],
         );
     }
 }

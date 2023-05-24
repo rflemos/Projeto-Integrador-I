@@ -38,7 +38,7 @@
                     <div class="col">
                         <div class="form-group">
                             <label for="username" class="form-label">Usuario (*)</label>
-                            <input id="username" name="username" type="text" rules="required|min:3|max:10"
+                            <input id="username" name="username" type="text" rules="required|min:3|max:20"
                                 placeholder="Entre com seu nome de usuário" class="form-control">
                             <span class="form-message"></span>
                         </div>

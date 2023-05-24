@@ -6,22 +6,22 @@ include('func/header.php');
 
 <?php
 
-/*  include login form  */
-include('libs/_login-form.php')
-/*  include login form  */
+
+include('libs/_account-form.php')
+
 
 ?>
 
 <?php
-// include footer.php file
+
 include('func/footer.php');
 ?>
 
 <!-- validate script -->
 <script src="./validator.js"></script>
 <script>
-    var signInForm = new Validator('#sign-in');
-    signInForm.onSubmit = function (data) {
+    var addMemForm = new Validator('#add-member');
+    addMemForm.onSubmit = function (data) {
         alert(JSON.stringify());
     }
 </script>

@@ -12,9 +12,9 @@ $in_cart = $cart->getCartId($cart->getCart($_COOKIE['user_id'] ?? 0));
 ?>
 <section id="special-price">
     <div class="container">
-        <h4 class="font-size-20">Special Price</h4>
+        <h4 class="font-size-20">Preço Especial</h4>
         <div id="filters" class="button-group text-end  font-size-16">
-            <button class="btn is-checked" data-filter="*">All Brand</button>
+            <button class="btn is-checked" data-filter="*">Todas As Marcas</button>
             <?php
             array_map(function ($brand) {
                 printf('<button class="btn" data-filter=".%s">%s</button>', $brand, $brand);
@@ -41,7 +41,7 @@ $in_cart = $cart->getCartId($cart->getCart($_COOKIE['user_id'] ?? 0));
                                     <span><i class="far fa-star"></i></span>
                                 </div>
                                 <div class="price py-2">
-                                    <span>$
+                                    <span>R$
                                         <?php echo $item['price'] ?? 0 ?>
                                     </span>
                                 </div>
@@ -51,9 +51,9 @@ $in_cart = $cart->getCartId($cart->getCart($_COOKIE['user_id'] ?? 0));
                                         value="<?php echo $_COOKIE['user_id'] ?? 0 ?>">
                                     <?php
                                     if (in_array($item['id'], $in_cart ?? [])) {
-                                        echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
+                                        echo '<button type="submit" disabled class="btn btn-success font-size-12">No Carrinho</button>';
                                     } else {
-                                        echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
+                                        echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Adcionar ao Carrinho</button>';
                                     }
                                     ?>
                                 </form>

@@ -60,7 +60,7 @@
                 </a>
                 <a href="./register.php" class="px-3 border-start text-dark">Cadastro</a>
                 <a href="./account.php" class="px-3 border-start text-dark">Gerenciar Contas</a>
-                <a href="#" class="px-3 border-start text-dark">Minha Conta</a>
+                <a href="./manage.php" class="px-3 border-start text-dark">Gerenciar Produtos</a>
             </div>
         </div>
 

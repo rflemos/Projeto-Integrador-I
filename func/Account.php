@@ -135,7 +135,7 @@ class Account
             }
         }
     }
-/*
+
     // delete account item using account id
     public function deleteAcc($id = null, $table = 'account')
     {
@@ -184,6 +184,6 @@ class Account
         } else {
             echo '<script>alert("Please fill all fields!")</script>';
         }
-    }*/
+    }
 
 }

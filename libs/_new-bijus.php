@@ -25,7 +25,7 @@ shuffle($productData);
                                 <span><i class="far fa-star"></i></span>
                             </div>
                             <div class="price py-2">
-                                <span>$
+                                <span>R$
                                     <?php echo $item['price'] ?? '0'; ?>
                                 </span>
                             </div>
@@ -35,9 +35,9 @@ shuffle($productData);
                                     value="<?php echo $_COOKIE['user_id'] ?? 0 ?>">
                                 <?php
                                 if (in_array($item['id'], $cart->getCartId($cart->getCart($_COOKIE['user_id'] ?? 0)) ?? [])) {
-                                    echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
+                                    echo '<button type="submit" disabled class="btn btn-success font-size-12">No carrinho</button>';
                                 } else {
-                                    echo '<button type="submit" name="new_phones_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
+                                    echo '<button type="submit" name="new_bijus_submit" class="btn btn-warning font-size-12">Adicionar ao Carrinho</button>';
                                 }
                                 ?>
                             </form>
