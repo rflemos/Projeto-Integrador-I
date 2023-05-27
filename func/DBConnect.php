@@ -5,7 +5,7 @@ class Connect
     // Database Connection Properties
     protected $host = 'projetointegradorpiiv.mariadb.database.azure.com';
     protected $user = 'adminuser@projetointegradorpiiv';
-    protected $password = '';
+    protected $password = 'P@$$w0rd';
     protected $database = 'semijoiaprod';
 
     // connection property
