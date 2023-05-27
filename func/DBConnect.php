@@ -3,8 +3,8 @@
 class Connect
 {
     // Database Connection Properties
-    protected $host = '127.0.0.1';
-    protected $user = 'root';
+    protected $host = 'projetointegradorpiiv.mariadb.database.azure.com';
+    protected $user = 'adminuser@projetointegradorpiiv';
     protected $password = '';
     protected $database = 'semijoiaprod';
 
