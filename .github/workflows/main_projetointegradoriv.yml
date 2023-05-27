@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'projetointegradoriv'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_21A3438B345B4651B46F94DBCC40CE2C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_14EA84C6844D4BAB87FADF6E75F46334 }}
           package: .
