@@ -19,7 +19,7 @@
 CREATE DATABASE IF NOT EXISTS `semijoiaprod` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 USE `semijoiaprod`;
 
--- Copiando estrutura para tabela semijoiaprod.account
+-- Copiando estrutura para tabela semisemijoiaprodjoiaprod.account
 CREATE TABLE IF NOT EXISTS `account` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(30) NOT NULL,
@@ -32,9 +32,10 @@ CREATE TABLE IF NOT EXISTS `account` (
 
 -- Copiando dados para a tabela semijoiaprod.account: ~3 rows (aproximadamente)
 INSERT INTO `account` (`id`, `username`, `password`, `email`, `privilege`) VALUES
+	(0, 'guest', 'guest', '', 1),
 	(1, 'admin', 'admin', 'admin@gmail.com', 1),
 	(2, 'rafael', '123456', 'rafael@gmail.com', 1),
-	(3, 'guest', 'guest', '', 1);
+	(3, 'guest1', 'guest1', '', 1);
 
 -- Copiando estrutura para tabela semijoiaprod.bill
 CREATE TABLE IF NOT EXISTS `bill` (
@@ -138,9 +139,10 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 -- Copiando dados para a tabela semijoiaprod.user: ~3 rows (aproximadamente)
 INSERT INTO `user` (`id`, `fullname`, `phone`, `avatar`, `city`, `gender`, `address`, `money`) VALUES
+   (0, 'GUEST', '0943284322', 'https://www.shareicon.net/data/128x128/2016/05/26/771187_man_512x512.png', 'BH', 0, NULL, 99999.99), 
 	(1, 'Admin', '0943284322', 'https://www.shareicon.net/data/128x128/2016/05/26/771187_man_512x512.png', 'BH', 0, NULL, 99999.99),
 	(2, 'Rafael', '0828382237', 'https://www.shareicon.net/data/128x128/2016/05/26/771188_man_512x512.png', 'SP', 0, NULL, 50.00),
-	(3, 'Guest', NULL, NULL, 'SP', 0, NULL, 0.00);
+	(3, 'Guest1', NULL, NULL, 'SP', 0, NULL, 0.00);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
