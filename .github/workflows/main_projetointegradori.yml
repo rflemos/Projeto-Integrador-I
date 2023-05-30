@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'projetointegradori'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4C778EE6145848E790537DFB06934526 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3A2A3A8A0A59419FAB63A97F86B6440A }}
           package: .
